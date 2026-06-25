@@ -1,0 +1,20 @@
+{
+  "name": "eastbase-studio",
+  "owner": {
+    "name": "Eastbase Studio",
+    "url": "https://github.com/eastbase-studio"
+  },
+  "metadata": {
+    "description": "Eastbase Studio's Claude Code plugins — shared agent tooling across all eastbase products.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "eastbase",
+      "source": "./plugins/eastbase",
+      "description": "Eastbase Studio's shared agent tooling. Ships the eastbase-premium-ui skill — the house standard for premium, personality-rich product UI. BurnCap's Ember Console is the worked reference.",
+      "version": "0.1.0",
+      "category": "design"
+    }
+  ]
+}

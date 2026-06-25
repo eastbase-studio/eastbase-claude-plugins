@@ -1,0 +1,23 @@
+[
+  { "query": "I'm adding a new /usage analytics page to burncap — it needs a row of KPIs (MTD spend, today, forecast) and a 30-day spend chart. Can you build it out?", "should_trigger": true },
+  { "query": "the settings page in my eastbase app looks super generic, like every other shadcn dashboard. make it feel more like our actual product", "should_trigger": true },
+  { "query": "build the empty state for the alerts page when there are no alerts yet — right now it literally just says 'No data'", "should_trigger": true },
+  { "query": "design a loading skeleton for the economics page while the per-customer margin data is fetching", "should_trigger": true },
+  { "query": "review src/components/budgets/budget-controls.tsx and tell me how to make it feel more premium and on-brand", "should_trigger": true },
+  { "query": "I'm starting a new tool under eastbase studio — a uptime/status monitor. Help me design the main dashboard so it has real personality, not a stock admin template.", "should_trigger": true },
+  { "query": "the 404 page is just plain centered text right now, give it some character that matches the rest of the app", "should_trigger": true },
+  { "query": "make a ranked table of top customers by spend for the admin panel — it should look polished, not like a raw spreadsheet dump", "should_trigger": true },
+  { "query": "can you put together the first-run onboarding screen for burncap, for when a workspace has no usage data yet?", "should_trigger": true },
+  { "query": "polish the app error boundary screen so it feels intentional and branded instead of a generic crash page", "should_trigger": true },
+
+  { "query": "the budget forecast calc in src/lib/budgets/evaluate.ts is off by a day around month boundaries — can you fix the date bucketing?", "should_trigger": false },
+  { "query": "what was our month-to-date spend trend last month vs this month? just give me the numbers", "should_trigger": false },
+  { "query": "add the recharts dependency and wire up the ChartContainer provider in the project", "should_trigger": false },
+  { "query": "write the marketing copy for the burncap pricing hero — like two punchy lines, no code", "should_trigger": false },
+  { "query": "there's a horizontal scroll bug on mobile in the dashboard, some div is overflowing — find and fix the overflow", "should_trigger": false },
+  { "query": "add a shadcn dialog component to the project", "should_trigger": false },
+  { "query": "i need a new API route POST /api/v1/usage to ingest events with zod validation", "should_trigger": false },
+  { "query": "generate the drizzle migration for the new notification_settings.digest column", "should_trigger": false },
+  { "query": "for a quick throwaway internal script, just dump the results as a plain html table — doesn't need to be pretty at all", "should_trigger": false },
+  { "query": "audit my client's WordPress marketing site for accessibility issues", "should_trigger": false }
+]
