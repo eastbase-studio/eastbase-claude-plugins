@@ -12,8 +12,8 @@
     {
       "name": "eastbase",
       "source": "./plugins/eastbase",
-      "description": "Eastbase Studio's shared agent tooling. Ships the eastbase-premium-ui skill — the house standard for premium, personality-rich product UI. BurnCap's Ember Console is the worked reference.",
-      "version": "0.1.0",
+      "description": "Eastbase Studio's shared agent tooling. Ships the eastbase-premium-ui skill — the house standard for premium, personality-rich product UI, taught via two contrasting worked references.",
+      "version": "0.1.1",
       "category": "design"
     }
   ]

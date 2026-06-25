@@ -1,7 +1,7 @@
 {
   "name": "eastbase",
   "description": "Eastbase Studio's shared Claude Code tooling. Ships the eastbase-premium-ui skill — the house standard for premium, personality-rich product UI (charts/tables/analytics/admin, empty/loading/error states, layout, dark-mode/contrast). BurnCap's Ember Console is the worked reference.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Eastbase Studio",
     "url": "https://github.com/eastbase-studio"

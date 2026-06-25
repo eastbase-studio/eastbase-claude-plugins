@@ -1,4 +1,11 @@
-# Reference: BurnCap "Ember Console"
+# Reference: BurnCap "Ember Console" — Example A (dark, data-driven)
+
+> **⚠ This is ONE product's implementation — not "the eastbase look."** If you are not
+> working on BurnCap, read it for the *structural moves* only (how a cluster is built,
+> how a hero viz is hand-made, how states are designed). Do **not** adopt its hue, flame
+> metaphor, mono numerals, or dark mode — those are BurnCap-specific. For proof the
+> method yields something totally different, see Example B
+> (`contrasting-signature-example.md`), a light editorial product.
 
 The fully-worked reference implementation of the eastbase premium-UI method. BurnCap is
 an AI-cost monitor; its signature reads spend as something *burning down* on an
