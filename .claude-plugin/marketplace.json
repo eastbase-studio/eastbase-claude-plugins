@@ -12,7 +12,7 @@
     {
       "name": "eastbase",
       "source": "./plugins/eastbase",
-      "description": "Eastbase Studio's shared agent tooling. Ships the eastbase-premium-ui skill — the house standard for premium, personality-rich product UI, taught via two contrasting worked references.",
+      "description": "Eastbase Studio's shared agent tooling. Ships eastbase-premium-ui (the house standard for premium, personality-rich product UI) and eastbase-review-pr (the Eastbase product/SaaS/risk review overlay for PRs, diffs, and agent-generated changes).",
       "version": "0.1.1",
       "category": "design"
     }

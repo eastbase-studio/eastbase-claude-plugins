@@ -6,9 +6,12 @@ device and teammate in sync.
 
 ## Plugins
 
-| Plugin | What it does |
+The `eastbase` plugin bundles the studio's skills:
+
+| Skill | What it does |
 | --- | --- |
 | `eastbase-premium-ui` | The house standard for premium, personality-rich product UI — a transferable per-product *signature* method (metaphor → palette → type → bespoke components), creative charts/tables/analytics/admin, designed empty/loading/error states, and dark-mode/contrast gates. BurnCap's "Ember Console" is the worked reference. |
+| `eastbase-review-pr` | The Eastbase **review overlay** for pull requests, diffs, branches, commits, and agent-generated changes — a product/SaaS/UX/billing/AI-cost/access-control/data-safety lens layered *on top of* your normal code-review, security, and testing tools. Produces a verdict + must-fix vs follow-up findings with P0–P3 severity. |
 
 ## Install (per device)
 
@@ -16,7 +19,7 @@ device and teammate in sync.
 # Add this marketplace (once per machine)
 claude plugin marketplace add eastbase-studio/eastbase-claude-plugins
 
-# Install the eastbase plugin (ships the eastbase-premium-ui skill)
+# Install the eastbase plugin (ships the eastbase studio skills)
 claude plugin install eastbase@eastbase-studio
 ```
 
@@ -28,9 +31,10 @@ claude plugin marketplace add "/path/to/eastbase-claude-plugins"
 ```
 
 To update everywhere later: `claude plugin marketplace update eastbase-studio` then
-`claude plugin update eastbase@eastbase-studio`. The skill is invoked as
-`eastbase:eastbase-premium-ui` (Claude namespaces it `plugin:skill`), and auto-triggers
-on UI work via its description regardless.
+`claude plugin update eastbase@eastbase-studio`. Skills are invoked as
+`eastbase:<skill-name>` (Claude namespaces them `plugin:skill`) and auto-trigger via
+their descriptions — `eastbase-premium-ui` on UI work, `eastbase-review-pr` when a review
+of a PR/diff/branch/commit is requested.
 
 ## Per-repo reinforcement
 
@@ -53,8 +57,13 @@ shadcn / SaaS defaults from memory.
 plugins/
 └── eastbase/                            # the "eastbase" plugin (bundles studio skills)
     ├── .claude-plugin/plugin.json        # plugin manifest
-    └── skills/eastbase-premium-ui/       # the skill (auto-discovered → eastbase:eastbase-premium-ui)
-        ├── SKILL.md
-        ├── references/
-        └── evals/                        # trigger eval set (for re-optimizing the description)
+    └── skills/                           # auto-discovered → eastbase:<skill-name>
+        ├── eastbase-premium-ui/
+        │   ├── SKILL.md
+        │   ├── references/
+        │   └── evals/                    # trigger eval set (for re-optimizing the description)
+        └── eastbase-review-pr/
+            ├── SKILL.md
+            ├── references/
+            └── evals/
 ```
