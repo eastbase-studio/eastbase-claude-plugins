@@ -38,9 +38,10 @@ of a PR/diff/branch/commit is requested.
 
 ## Per-repo reinforcement
 
-Skill auto-triggering is reliable for broad UI tasks but not for routine single surfaces
-(a lone loading skeleton, a 404, one empty state). Add this to each eastbase repo's
-`CLAUDE.md` so the skill is consulted deterministically:
+Auto-triggering is reliable for explicit, broad requests but not for routine cases — a
+lone loading skeleton or 404 (UI), or remembering to review a change before calling it
+done. Add these to each eastbase repo's `CLAUDE.md` so the skills are consulted
+deterministically:
 
 ```md
 ## UI work
@@ -48,6 +49,13 @@ For ANY user-facing UI in this repo — pages, components, charts, tables, and
 **especially** empty / loading / error / 404 states — follow the `eastbase-premium-ui`
 skill before writing or editing. Read it via the Skill tool; don't reproduce generic
 shadcn / SaaS defaults from memory.
+
+## Reviewing changes
+When reviewing a PR, diff, branch, or an agent's changes in this repo — and before
+declaring any non-trivial change done — apply the `eastbase-review-pr` skill as an overlay
+on your normal review: check Eastbase product, auth, billing, AI-cost, data-safety, and UX
+risk, not just code cleanliness. Read it via the Skill tool. It is a review overlay only —
+it does not change how you implement.
 ```
 
 ## Layout
