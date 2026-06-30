@@ -1,0 +1,3 @@
+display_name: Eastbase Review PR
+short_description: Eastbase Studio's product, SaaS, UX, billing, AI-cost, access-control, and data-safety review overlay.
+default_prompt: Use eastbase-review-pr when reviewing an Eastbase PR, diff, branch, commit, or agent-generated change.

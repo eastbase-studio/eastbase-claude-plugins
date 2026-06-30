@@ -1,0 +1,3 @@
+display_name: Eastbase Launch Check
+short_description: Eastbase Studio's practical pre-launch and go-live readiness gate.
+default_prompt: Use eastbase-launch-check before launching, publishing, announcing, selling, or meaningfully updating an Eastbase product.
