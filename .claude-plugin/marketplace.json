@@ -13,7 +13,7 @@
       "name": "eastbase",
       "source": "./plugins/eastbase",
       "description": "Eastbase Studio's shared agent tooling. Ships eastbase-premium-ui (the house standard for premium, personality-rich product UI), eastbase-review-pr (the Eastbase product/SaaS/risk review overlay for PRs, diffs, and agent-generated changes), and eastbase-launch-check (the practical pre-launch / go-live readiness gate for eastbase products).",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "category": "design"
     }
   ]
