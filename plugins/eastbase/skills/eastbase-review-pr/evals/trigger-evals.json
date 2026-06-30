@@ -1,23 +1,82 @@
 [
-  { "query": "review this PR that adds team invites and seat-based billing to burncap — is it safe to merge?", "should_trigger": true },
-  { "query": "I just had an agent implement the Lemon Squeezy webhook handler. Can you check the diff before I merge it?", "should_trigger": true },
-  { "query": "look over the feature/usage-export branch and tell me if there's anything risky before I ship it", "should_trigger": true },
-  { "query": "does this diff look right? it changes how we enforce pro-plan access on the dashboard", "should_trigger": true },
-  { "query": "go through the last 3 commits on this branch and review them for product and security issues", "should_trigger": true },
-  { "query": "we're about to merge the onboarding rewrite — give it a review and tell me what's must-fix vs nice-to-have", "should_trigger": true },
-  { "query": "an agent generated this code change touching auth and the drizzle schema. review it before I accept it", "should_trigger": true },
-  { "query": "critique this PR before I open it — does it actually solve the problem and is it ready?", "should_trigger": true },
-  { "query": "the marketing landing page PR is up — review the copy, claims, and CTAs before we publish", "should_trigger": true },
-  { "query": "can you look at my changes and flag anything that would weaken billing or access control?", "should_trigger": true },
-
-  { "query": "implement a POST /api/invites route that creates an invite and emails it via Resend", "should_trigger": false },
-  { "query": "the seat count is off by one when someone declines an invite — find and fix the bug", "should_trigger": false },
-  { "query": "add a drizzle migration for the new invites table with an owner_id and role column", "should_trigger": false },
-  { "query": "build the team invites page with an invite form and a list of pending invites", "should_trigger": false },
-  { "query": "design the empty state for the team page when a workspace has no members yet", "should_trigger": false },
-  { "query": "write the Lemon Squeezy webhook handler for subscription_updated quantity changes", "should_trigger": false },
-  { "query": "scaffold a new eastbase product with next.js app router, drizzle, neon, and betterauth", "should_trigger": false },
-  { "query": "explain how betterauth sessions work in this codebase and where the checks live", "should_trigger": false },
-  { "query": "what was our seat count and MRR at the end of last month? just give me the numbers", "should_trigger": false },
-  { "query": "refactor src/lib/team/invites.ts to be a bit cleaner, the token logic is messy", "should_trigger": false }
+  {
+    "query": "review this PR that adds team invites and seat-based billing to burncap — is it safe to merge?",
+    "should_trigger": true
+  },
+  {
+    "query": "I just had an agent implement the Lemon Squeezy webhook handler. Can you check the diff before I merge it?",
+    "should_trigger": true
+  },
+  {
+    "query": "look over the feature/usage-export branch and tell me if there's anything risky before I ship it",
+    "should_trigger": true
+  },
+  {
+    "query": "does this diff look right? it changes how we enforce pro-plan access on the dashboard",
+    "should_trigger": true
+  },
+  {
+    "query": "go through the last 3 commits on this branch and review them for product and security issues",
+    "should_trigger": true
+  },
+  {
+    "query": "we're about to merge the onboarding rewrite — give it a review and tell me what's must-fix vs nice-to-have",
+    "should_trigger": true
+  },
+  {
+    "query": "an agent generated this code change touching auth and the drizzle schema. review it before I accept it",
+    "should_trigger": true
+  },
+  {
+    "query": "critique this PR before I open it — does it actually solve the problem and is it ready?",
+    "should_trigger": true
+  },
+  {
+    "query": "the marketing landing page PR is up — review the copy, claims, and CTAs before we publish",
+    "should_trigger": true
+  },
+  {
+    "query": "can you look at my changes and flag anything that would weaken billing or access control?",
+    "should_trigger": true
+  },
+  {
+    "query": "implement a POST /api/invites route that creates an invite and emails it via Resend",
+    "should_trigger": false
+  },
+  {
+    "query": "the seat count is off by one when someone declines an invite — find and fix the bug",
+    "should_trigger": false
+  },
+  {
+    "query": "add a drizzle migration for the new invites table with an owner_id and role column",
+    "should_trigger": false
+  },
+  {
+    "query": "build the team invites page with an invite form and a list of pending invites",
+    "should_trigger": false
+  },
+  {
+    "query": "design the empty state for the team page when a workspace has no members yet",
+    "should_trigger": false
+  },
+  {
+    "query": "write the Lemon Squeezy webhook handler for subscription_updated quantity changes",
+    "should_trigger": false
+  },
+  {
+    "query": "scaffold a new eastbase product with next.js app router, drizzle, neon, and betterauth",
+    "should_trigger": false
+  },
+  {
+    "query": "explain how betterauth sessions work in this codebase and where the checks live",
+    "should_trigger": false
+  },
+  {
+    "query": "what was our seat count and MRR at the end of last month? just give me the numbers",
+    "should_trigger": false
+  },
+  {
+    "query": "refactor src/lib/team/invites.ts to be a bit cleaner, the token logic is messy",
+    "should_trigger": false
+  }
 ]
