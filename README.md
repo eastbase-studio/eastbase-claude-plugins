@@ -12,6 +12,7 @@ The `eastbase` plugin bundles the studio's skills:
 | --- | --- |
 | `eastbase-premium-ui` | The house standard for premium, personality-rich product UI — a transferable per-product *signature* method (metaphor → palette → type → bespoke components), creative charts/tables/analytics/admin, designed empty/loading/error states, and dark-mode/contrast gates. BurnCap's "Ember Console" is the worked reference. |
 | `eastbase-review-pr` | The Eastbase **review overlay** for pull requests, diffs, branches, commits, and agent-generated changes — a product/SaaS/UX/billing/AI-cost/access-control/data-safety lens layered *on top of* your normal code-review, security, and testing tools. Produces a verdict + must-fix vs follow-up findings with P0–P3 severity. |
+| `eastbase-launch-check` | The Eastbase **pre-launch readiness gate** — a practical, high-signal go-live review for small SaaS, AI tools, landing pages, internal tools, and Kits. Walks the real launch surface (clarity, core flow, auth, billing/entitlement, DB, env/deploy, email, legal, SEO/OG, observability, AI cost, polish, Kit completeness, docs) and returns a launch verdict, blockers vs follow-ups, and manual-verification + production-config checklists. Not a security/legal/compliance audit. |
 
 ## Install (per device)
 
@@ -34,7 +35,8 @@ To update everywhere later: `claude plugin marketplace update eastbase-studio` t
 `claude plugin update eastbase@eastbase-studio`. Skills are invoked as
 `eastbase:<skill-name>` (Claude namespaces them `plugin:skill`) and auto-trigger via
 their descriptions — `eastbase-premium-ui` on UI work, `eastbase-review-pr` when a review
-of a PR/diff/branch/commit is requested.
+of a PR/diff/branch/commit is requested, `eastbase-launch-check` when a pre-launch /
+go-live readiness review is requested.
 
 ## Per-repo reinforcement
 
@@ -70,7 +72,11 @@ plugins/
         │   ├── SKILL.md
         │   ├── references/
         │   └── evals/                    # trigger eval set (for re-optimizing the description)
-        └── eastbase-review-pr/
+        ├── eastbase-review-pr/
+        │   ├── SKILL.md
+        │   ├── references/
+        │   └── evals/
+        └── eastbase-launch-check/
             ├── SKILL.md
             ├── references/
             └── evals/

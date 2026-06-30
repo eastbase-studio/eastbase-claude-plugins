@@ -1,0 +1,23 @@
+[
+  { "query": "check before launch — is my SaaS ready to go live?", "should_trigger": true },
+  { "query": "pre-launch check on the dashboard app before I post it on Product Hunt tomorrow", "should_trigger": true },
+  { "query": "can I publish this? I want to make sure users can't access paid features for free", "should_trigger": true },
+  { "query": "review launch readiness for the new AI tool before I announce it on X", "should_trigger": true },
+  { "query": "go-live checklist for this app — what would actually block a launch?", "should_trigger": true },
+  { "query": "production readiness check before I flip the domain live", "should_trigger": true },
+  { "query": "final audit before I start selling this Eastbase Kit", "should_trigger": true },
+  { "query": "is this ready to release? check auth, billing, webhooks, and env before I ship", "should_trigger": true },
+  { "query": "check if users can cheat the purchase/access on this before I launch", "should_trigger": true },
+  { "query": "we're launching the beta on Reddit this weekend — is it safe and clear enough to go public?", "should_trigger": true },
+
+  { "query": "implement the POST /api/generate route that loops over posts and calls OpenAI", "should_trigger": false },
+  { "query": "review this PR that adds team invites before I merge it", "should_trigger": false },
+  { "query": "the dashboard looks generic and unfinished, make it feel more premium and on-brand", "should_trigger": false },
+  { "query": "design the drizzle migration for the new subscriptions table", "should_trigger": false },
+  { "query": "write the landing page hero copy — two punchy lines, no code", "should_trigger": false },
+  { "query": "there's a mobile overflow bug on the pricing page, find and fix it", "should_trigger": false },
+  { "query": "add a per-user rate limit to the generate endpoint", "should_trigger": false },
+  { "query": "what was our signup conversion this week? just give me the number", "should_trigger": false },
+  { "query": "set up the Lemon Squeezy webhook handler for the order_created event", "should_trigger": false },
+  { "query": "explain how BetterAuth sessions work in this project and where the checks live", "should_trigger": false }
+]
