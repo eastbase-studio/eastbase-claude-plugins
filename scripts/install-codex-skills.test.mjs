@@ -12,6 +12,12 @@ import {
 } from './install-codex-skills.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const EXPECTED_EASTBASE_SKILLS = [
+  'eastbase-premium-ui',
+  'eastbase-review-pr',
+  'eastbase-launch-check',
+  'eastbase-blog-post',
+];
 
 async function withTempDir(callback) {
   const dir = await mkdtemp(path.join(tmpdir(), 'eastbase-codex-skills-'));
@@ -30,6 +36,13 @@ function silentLogger() {
     error() {},
   };
 }
+
+test('installer includes every canonical Eastbase skill folder', () => {
+  assert.deepEqual(
+    EASTBASE_SKILLS.map((skill) => skill.name),
+    EXPECTED_EASTBASE_SKILLS,
+  );
+});
 
 test('canonical Eastbase skills have Codex-compatible frontmatter', async () => {
   for (const skill of EASTBASE_SKILLS) {

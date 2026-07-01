@@ -16,6 +16,7 @@ https://developers.openai.com/codex/skills
 - `plugins/eastbase/skills/eastbase-premium-ui`
 - `plugins/eastbase/skills/eastbase-review-pr`
 - `plugins/eastbase/skills/eastbase-launch-check`
+- `plugins/eastbase/skills/eastbase-blog-post`
 
 Each folder contains the canonical `SKILL.md` plus any `references/`, `evals/`, and
 lightweight Codex metadata under `agents/openai.yaml`.
@@ -59,14 +60,16 @@ discovery because that would create a second source of truth.
 
 After installing, restart Codex if the skills do not appear immediately. Then check one of:
 
-- Run `/skills` and look for `eastbase-premium-ui`, `eastbase-review-pr`, and
-  `eastbase-launch-check`.
+- Run `/skills` and look for `eastbase-premium-ui`, `eastbase-review-pr`,
+  `eastbase-launch-check`, and `eastbase-blog-post`.
 - If explicit skill invocation is supported in your Codex environment, try
-  `$eastbase-premium-ui`, `$eastbase-review-pr`, or `$eastbase-launch-check`.
+  `$eastbase-premium-ui`, `$eastbase-review-pr`, `$eastbase-launch-check`, or
+  `$eastbase-blog-post`.
 - Ask test prompts that should trigger each skill:
   - `In an Eastbase app, design a premium empty state for a dashboard.`
   - `Review this Eastbase PR diff for product, SaaS, billing, access-control, and AI-cost risk.`
   - `Run a pre-launch readiness check before publishing this Eastbase SaaS.`
+  - `Draft an honest Eastbase blog post from these product-building notes.`
 
 ## Uninstall
 
@@ -76,6 +79,7 @@ Remove the installed entries. For the default user-level install:
 rm "$HOME/.agents/skills/eastbase-premium-ui"
 rm "$HOME/.agents/skills/eastbase-review-pr"
 rm "$HOME/.agents/skills/eastbase-launch-check"
+rm "$HOME/.agents/skills/eastbase-blog-post"
 ```
 
 For repo-level links, remove the entries from `.agents/skills/` instead.
@@ -86,4 +90,5 @@ On Windows Command Prompt, the equivalent user-level uninstall is:
 rmdir "%USERPROFILE%\.agents\skills\eastbase-premium-ui"
 rmdir "%USERPROFILE%\.agents\skills\eastbase-review-pr"
 rmdir "%USERPROFILE%\.agents\skills\eastbase-launch-check"
+rmdir "%USERPROFILE%\.agents\skills\eastbase-blog-post"
 ```

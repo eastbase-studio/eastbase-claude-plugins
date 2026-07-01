@@ -17,6 +17,7 @@ export const EASTBASE_SKILLS = Object.freeze([
   { name: 'eastbase-premium-ui' },
   { name: 'eastbase-review-pr' },
   { name: 'eastbase-launch-check' },
+  { name: 'eastbase-blog-post' },
 ]);
 
 const SKILLS_ROOT = path.join('plugins', 'eastbase', 'skills');
