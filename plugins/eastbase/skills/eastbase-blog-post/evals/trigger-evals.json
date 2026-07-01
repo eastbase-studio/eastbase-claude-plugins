@@ -1,0 +1,82 @@
+[
+  {
+    "query": "write a blog post about why we built BurnCap and what problem triggered it",
+    "should_trigger": true
+  },
+  {
+    "query": "draft a build-in-public post about the entitlement bug I just caught before launch",
+    "should_trigger": true
+  },
+  {
+    "query": "turn these rough product notes into a dogfooding post for the Eastbase Lab",
+    "should_trigger": true
+  },
+  {
+    "query": "write a launch post for the new AI cost dashboard — soft, not salesy",
+    "should_trigger": true
+  },
+  {
+    "query": "review this blog post draft and tell me if it sounds too promotional or AI-written",
+    "should_trigger": true
+  },
+  {
+    "query": "repurpose my latest blog post into an X thread and a LinkedIn post",
+    "should_trigger": true
+  },
+  {
+    "query": "write a founder essay about what AI agents changed in our dev workflow",
+    "should_trigger": true
+  },
+  {
+    "query": "make a Reddit discussion post out of this lesson without it sounding like an ad",
+    "should_trigger": true
+  },
+  {
+    "query": "help me outline a post about the tradeoffs of using a cheaper model for our AI feature",
+    "should_trigger": true
+  },
+  {
+    "query": "improve the intro of this post — it feels generic and starts with filler",
+    "should_trigger": true
+  },
+  {
+    "query": "implement the blog page route with MDX and a rendered content collection in Next.js",
+    "should_trigger": false
+  },
+  {
+    "query": "review this PR that adds the newsletter signup form before I merge it",
+    "should_trigger": false
+  },
+  {
+    "query": "is the marketing site ready to launch on Product Hunt this week?",
+    "should_trigger": false
+  },
+  {
+    "query": "draft the Privacy Policy page for the new app",
+    "should_trigger": false
+  },
+  {
+    "query": "write the API reference docs for the POST /api/generate endpoint",
+    "should_trigger": false
+  },
+  {
+    "query": "give me a meta title and 12 keywords to rank for 'ai cost monitoring'",
+    "should_trigger": false
+  },
+  {
+    "query": "write the password-reset transactional email",
+    "should_trigger": false
+  },
+  {
+    "query": "make the dashboard empty state feel more premium and on-brand",
+    "should_trigger": false
+  },
+  {
+    "query": "write a best-man speech for my brother's wedding",
+    "should_trigger": false
+  },
+  {
+    "query": "fix the typo and tighten the pricing page hero line",
+    "should_trigger": false
+  }
+]

@@ -1,10 +1,10 @@
 {
   "name": "eastbase",
-  "description": "Eastbase Studio's shared Claude Code tooling. Ships eastbase-premium-ui (the house standard for premium, personality-rich product UI — charts/tables/analytics/admin, empty/loading/error states, layout, dark-mode/contrast), eastbase-review-pr (the Eastbase product/SaaS/risk review overlay for PRs, diffs, branches, and agent-generated changes), and eastbase-launch-check (the practical pre-launch / go-live readiness gate for eastbase products).",
+  "description": "Eastbase Studio's shared Claude Code tooling. Ships eastbase-premium-ui (the house standard for premium, personality-rich product UI — charts/tables/analytics/admin, empty/loading/error states, layout, dark-mode/contrast), eastbase-review-pr (the Eastbase product/SaaS/risk review overlay for PRs, diffs, branches, and agent-generated changes), eastbase-launch-check (the practical pre-launch / go-live readiness gate for eastbase products), and eastbase-blog-post (the Eastbase writing taste layer for practical, honest, product-led blog and long-form content).",
   "version": "0.3.1",
   "author": {
     "name": "Eastbase Studio",
     "url": "https://github.com/eastbase-studio"
   },
-  "keywords": ["ui", "design", "design-system", "frontend", "code-review", "pr-review", "eastbase"]
+  "keywords": ["ui", "design", "design-system", "frontend", "code-review", "pr-review", "launch", "content", "writing", "blog", "eastbase"]
 }
